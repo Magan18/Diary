@@ -1,0 +1,88 @@
+body {
+  margin: 5%;
+  font-family: 'Gill Sans', 'Gill Sans MT';
+  display: grid;
+  justify-content: center;
+}
+
+.title {
+  color: #16697A;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.entry-title, .entry-date, .entry-textbox, .mood-selector {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.entry-textbox {
+  height: 200px; /* Increased height */
+  padding: 1em;
+  border-radius: 25px;
+  background-color: #FFA62B;
+  border: none;
+}
+
+.entry-textbox:focus {
+  outline: none;
+}
+
+#entryForm .button {
+  border: unset;
+  border-radius: 10px;
+  padding: 1em;
+  margin-left: 75%;
+}
+
+#entries {
+  background: #16697A;
+  color: #EDE7E3;
+  font-family: cursive;
+  border-radius: 25px;
+  padding: 2em;
+  max-width: 100%;
+  border: unset;
+  margin-top: 1em;
+}
+
+.entries-nav {
+  display: flex; /* Use flexbox for side-by-side layout */
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  gap: 20px; /* Space between notes */
+}
+
+.note {
+  background: #FFA62B; /* Background color for notes */
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px; /* Fixed width for each note */
+  cursor: pointer;
+  position: relative; /* Position for delete button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.note h3 {
+  margin: 0;
+}
+
+.note-content {
+  display: none; /* Initially hidden */
+  margin-top: 10px; /* Space between title and content */
+}
+
+.delete-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.delete-button:hover {
+  background: darkred;
+}

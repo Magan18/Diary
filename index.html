@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Diary</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1 class="title">My Personal Diary</h1>
+    <form id="entryForm">
+        <input type="text" class="entry-title" placeholder="Note Title" required /><br/>
+        <input type="date" class="entry-date" required /><br/>
+        <textarea class="entry-textbox" placeholder="What happened today?" required></textarea><br/>
+        <label for="mood">Select Mood:</label>
+        <select class="mood-selector" required>
+            <option value="">--Select Mood--</option>
+            <option value="😊 Happy">😊 Happy</option>
+            <option value="😐 Neutral">😐 Neutral</option>
+            <option value="😢 Sad">😢 Sad</option>
+            <option value="😠 Angry">😠 Angry</option>
+            <option value="😌 Relaxed">😌 Relaxed</option>
+        </select><br/>
+        <button type="submit" class="button">Submit</button>
+    </form>
+    <!-- Entries -->
+    <section id="entries"> 
+        <div class="entries-nav"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
